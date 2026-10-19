@@ -3,7 +3,7 @@ package com.ccsw.tutorial.category.model;
 import jakarta.persistence.*;
 
 /**
- * @author ccsw
+ * @author Joanne Zamorano
  *
  */
 @Entity
