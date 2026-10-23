@@ -88,6 +88,9 @@ public class PrestamoServiceImpl implements PrestamoService{
 
         int contador = 0;
         for (Prestamo p: prestamos){
+            if (id != null && p.getId().equals(id)) {
+                continue;
+            }
             boolean overlap = !data.getEndDate().isBefore(p.getStartDate()) && !data.getStartDate().isAfter(p.getEndDate());
 
             //juego ocupado

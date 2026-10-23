@@ -37,9 +37,9 @@ public class PrestamoSpecification implements Specification<Prestamo> {
             } else {
                 return builder.equal(path, criteria.getValue());
             }
-        }else if (criteria.getOperation().equalsIgnoreCase(">=")) {
+        }else if (criteria.getOperation().equalsIgnoreCase(">=")&& criteria.getValue() != null) {
             return builder.greaterThanOrEqualTo(getPath(root).as(LocalDate.class),(LocalDate) criteria.getValue());
-        }else if (criteria.getOperation().equalsIgnoreCase("<=")) {
+        }else if (criteria.getOperation().equalsIgnoreCase("<=")&& criteria.getValue() != null) {
             return builder.lessThanOrEqualTo(getPath(root).as(LocalDate.class),(LocalDate) criteria.getValue());
         }
         return null;

@@ -22,3 +22,12 @@ INSERT INTO customer(name) VALUES ('Joanne');
 INSERT INTO customer(name) VALUES ('Jorge');
 INSERT INTO customer(name) VALUES ('Kenneth');
 INSERT INTO customer(name) VALUES ('Pablo');
+
+INSERT INTO prestamo(game_id, customer_id, start_date, end_date)
+VALUES (1, 1, '2026-10-22', '2026-10-29');
+
+INSERT INTO prestamo(game_id, customer_id, start_date, end_date)
+VALUES (2, 2, '2026-11-01', '2026-11-08');
+
+INSERT INTO prestamo(game_id, customer_id, start_date, end_date)
+VALUES (3, 3, '2026-11-10', '2026-11-17');
