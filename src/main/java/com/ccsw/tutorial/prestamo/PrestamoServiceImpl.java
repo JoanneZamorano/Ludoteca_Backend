@@ -43,6 +43,9 @@ public class PrestamoServiceImpl implements PrestamoService{
      */
     @Override
     public Page<Prestamo> findPage(PrestamoSearchDto dto) {
+
+        System.out.println("FECHA RECIBIDA: " + dto.getDate());
+
         PrestamoSpecification gameSpec = new PrestamoSpecification(new SearchCriteria("game.id",":",dto.getGameId()));
         PrestamoSpecification customerSpec = new PrestamoSpecification(new SearchCriteria("customer.id",":",dto.getCustomerId()));
         PrestamoSpecification startDateSpec = new PrestamoSpecification(new SearchCriteria("startDate","<=",dto.getDate()));

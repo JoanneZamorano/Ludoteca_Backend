@@ -24,10 +24,37 @@ INSERT INTO customer(name) VALUES ('Kenneth');
 INSERT INTO customer(name) VALUES ('Pablo');
 
 INSERT INTO prestamo(game_id, customer_id, start_date, end_date)
-VALUES (1, 1, '2026-10-22', '2026-10-29');
+VALUES (1, 1, '2026-11-01', '2026-11-08');
 
 INSERT INTO prestamo(game_id, customer_id, start_date, end_date)
-VALUES (2, 2, '2026-11-01', '2026-11-08');
+VALUES (2, 2, '2026-11-03', '2026-11-10');
 
 INSERT INTO prestamo(game_id, customer_id, start_date, end_date)
-VALUES (3, 3, '2026-11-10', '2026-11-17');
+VALUES (3, 3, '2026-11-05', '2026-11-12');
+
+INSERT INTO prestamo(game_id, customer_id, start_date, end_date)
+VALUES (4, 4, '2026-11-08', '2026-11-15');
+
+INSERT INTO prestamo(game_id, customer_id, start_date, end_date)
+VALUES (5, 5, '2026-11-10', '2026-11-17');
+
+INSERT INTO prestamo(game_id, customer_id, start_date, end_date)
+VALUES (6, 6, '2026-11-12', '2026-11-19');
+
+INSERT INTO prestamo(game_id, customer_id, start_date, end_date)
+VALUES (1, 2, '2026-11-15', '2026-11-22');
+
+INSERT INTO prestamo(game_id, customer_id, start_date, end_date)
+VALUES (2, 3, '2026-11-17', '2026-11-24');
+
+INSERT INTO prestamo(game_id, customer_id, start_date, end_date)
+VALUES (3, 4, '2026-11-20', '2026-11-27');
+
+INSERT INTO prestamo(game_id, customer_id, start_date, end_date)
+VALUES (4, 5, '2026-11-22', '2026-11-29');
+
+INSERT INTO prestamo(game_id, customer_id, start_date, end_date)
+VALUES (5, 6, '2026-11-24', '2026-11-30');
+
+INSERT INTO prestamo(game_id, customer_id, start_date, end_date)
+VALUES (6, 1, '2026-11-02', '2026-11-09');
